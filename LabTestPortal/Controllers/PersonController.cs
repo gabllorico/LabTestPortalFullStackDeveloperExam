@@ -44,6 +44,12 @@ namespace LabTestPortal.Controllers
                 Alert(request.Exception.GetBaseException().Message);
                 return RedirectToAction("Index", "Person");
             }
+            if (request.Data.Count == 0)
+            {
+                Alert("Add states first");
+                return RedirectToAction("Index", "Person");
+            }
+
             var newPerson = PersonHelper.NewPerson(request.Data);
             return View(newPerson);
         }

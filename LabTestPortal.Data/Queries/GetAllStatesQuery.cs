@@ -40,11 +40,6 @@ namespace LabTestPortal.Data.Queries
                 }
             }
 
-            if (listOfStates.Count == 0)
-            {
-                throw new Exception("Add states first.");
-            }
-
             return listOfStates;
         }
     }
