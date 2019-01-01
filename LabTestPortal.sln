@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabTestPortal", "LabTestPortal\LabTestPortal.csproj", "{BCFE60B7-A3DD-4EC0-BCA4-46383BCE8BC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabTestPortal.Data", "LabTestPortal.Data\LabTestPortal.Data.csproj", "{88785243-8819-496B-87EB-D187D7DF43FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCFE60B7-A3DD-4EC0-BCA4-46383BCE8BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFE60B7-A3DD-4EC0-BCA4-46383BCE8BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFE60B7-A3DD-4EC0-BCA4-46383BCE8BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFE60B7-A3DD-4EC0-BCA4-46383BCE8BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88785243-8819-496B-87EB-D187D7DF43FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88785243-8819-496B-87EB-D187D7DF43FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88785243-8819-496B-87EB-D187D7DF43FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88785243-8819-496B-87EB-D187D7DF43FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D4F52A9-F78F-4B99-8554-C878032E702A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿@model IList<LabTestPortal.Data.DTO.StateDto>
+@{
+    ViewBag.Title = "States";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb"><a href="@Url.Action("Index", "Home")">Home</a></li>
+    <li class="breadcrumb active">States</li>
+</ol>
+
+<h2>
+    States
+    <a href="@Url.Action("Add", "State")" class="btn btn-default pull-right">Add</a>
+</h2>
+<ul>
+    @foreach (var state in Model)
+    {
+        <li>
+            <a href="@Url.Action("Edit", "State", new {id = state.Id})">@state.StateCode</a>
+        </li>
+    }
+</ul>

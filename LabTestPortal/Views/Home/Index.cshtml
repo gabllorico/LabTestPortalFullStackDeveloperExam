@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>LabTestPortal.com</h1>
+    <p class="lead">Full Stack Web Developer in Healthcare exam for LabTestPortal.com, LLC created by Gabriel Lawrence Llorico</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>
+            <i class="fa fa-users"></i>Persons
+        </h2>
+        <p>View persons list</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Person")">Go To Person</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>
+            <i class="fa fa-map"></i>States
+        </h2>
+        <p>View states list</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "State")">Go To State</a></p>
+    </div>
+    @*<div class="col-md-4">
+        <h2>READ ME</h2>
+        <p>What could have been implemented if more time</p>
+        <p><a class="btn btn-default" href="@Url.Action("ReadMe", "Home")">Go to READ ME</a></p>
+    </div>*@
+</div>

@@ -1,0 +1,28 @@
+﻿@model IList<LabTestPortal.Data.DTO.PersonDto>
+@{
+    ViewBag.Title = "Search Result";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb"><a href="@Url.Action("Index", "Home")">Home</a></li>
+    <li class="breadcrumb"><a href="@Url.Action("Index", "Person")">Persons</a></li>
+    <li class="breadcrumb">Search Result</li>
+</ol>
+
+<h2>
+    Search result of @ViewBag.Search
+    <a href="@Url.Action("Index", "Person")" class="btn btn-default pull-right">Back</a>
+</h2>
+<hr />
+<nav class="nav col-md-4">
+    <ul>
+        @foreach (var person in Model)
+        {
+            <li>
+                <a href="@Url.Action("Edit", "Person", new {id = person.Id})">@person.FullName</a>
+            </li>
+        }
+    </ul>
+</nav>
+
+<script src="~/Scripts/person/index.js"></script>

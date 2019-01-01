@@ -1,0 +1,29 @@
+﻿@model LabTestPortal.Data.DTO.StateDto
+@{
+    ViewBag.Title = "Edit State";
+}
+
+@using (Html.BeginForm("Save", "State", FormMethod.Post, new { state = Model }))
+{
+    @Html.HiddenFor(m => m.Id)
+    <ol class="breadcrumb">
+        <li class="breadcrumb"><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="breadcrumb"><a href="@Url.Action("Index", "State")">States</a></li>
+        <li class="breadcrumb">Edit @Model.StateCode</li>
+    </ol>
+    <h2>
+        Edit State - @Model.StateCode
+        <button class="btn btn-default pull-right">Save</button>
+    </h2>
+
+    <div class="form-group row">
+        <div class="col-md-3">
+            <label class="control-label">State Code</label>
+        </div>
+        <div class="col-md-4">
+            @Html.TextBoxFor(m => m.StateCode, new { @class = "form-control", @required = "required", @oninput = "validateState(this)", @placeholder = "Enter state code" })
+        </div>
+    </div>
+}
+
+<script src="~/Scripts/state/save-state.js"></script>
