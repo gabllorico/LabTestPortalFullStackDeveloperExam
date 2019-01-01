@@ -39,6 +39,12 @@ namespace LabTestPortal.Data.Queries
                     conn.Close();
                 }
             }
+
+            if (listOfStates.Count == 0)
+            {
+                throw new Exception("Add states first.");
+            }
+
             return listOfStates;
         }
     }
